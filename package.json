@@ -1,6 +1,6 @@
 {
   "name": "saz-parser",
-  "version": "0.0.4-pre",
+  "version": "0.0.4",
   "description": "SAZ File parser",
   "author": {
     "name": "Ludovic LEFEVRE",
