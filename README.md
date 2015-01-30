@@ -13,9 +13,9 @@ $ npm install saz-parser
 ## Usage
 
 ```js
-var saz-parser = require('saz-parser');
+var sazParser = require('saz-parser');
 
-saz-parser('SAZ File Path', function(err, sessions) {
+sazParser('SAZ File Path', function(err, sessions) {
 	...
 });
 ```

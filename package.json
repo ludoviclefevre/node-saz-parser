@@ -1,6 +1,6 @@
 {
   "name": "saz-parser",
-  "version": "0.0.2-pre",
+  "version": "0.0.2",
   "description": "NodeJS SAZ File Parser Package",
   "author": {
     "name": "Ludovic LEFEVRE",
@@ -16,8 +16,9 @@
     "index.js"
   ],
   "keywords": [
-    "saz-parser",
-    "SAZ parser node package"
+    "saz",
+    "fiddler",
+    "parser"
   ],
   "dependencies": {
     "unzip": "~0.1.11",
