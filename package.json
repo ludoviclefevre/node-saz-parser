@@ -1,6 +1,6 @@
 {
   "name": "saz-parser",
-  "version": "0.0.2",
+  "version": "0.0.3-pre",
   "description": "NodeJS SAZ File Parser Package",
   "author": {
     "name": "Ludovic LEFEVRE",
