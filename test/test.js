@@ -2,6 +2,7 @@
 'use strict';
 var assert = require('assert');
 var sazParser = require('../');
+var async = require('async');
 
 describe('SAZ Parser', function () {
     it('must parse a one session .saz file', function (done) {
@@ -30,9 +31,35 @@ describe('SAZ Parser', function () {
 
     it('must return an error when trying to parse a bad .saz file', function (done) {
         sazParser('./test/notASazFile.saz', function (err) {
-            console.log(err);
             assert.ok(err);
             done();
+        });
+    });
+
+    it('must parse a multi-sessions .saz file', function (done) {
+        sazParser('./test/multipleSessions.saz', function (err, sessions) {
+            async.each(Object.keys(sessions), function(sessionId, callback) {
+                var session = sessions[sessionId];
+
+                // Request
+                var request = session.request;
+                var reqHeaders = request.headers;
+                assert.strictEqual(reqHeaders['CUSTOM_REQUEST_HEADER'], sessionId);
+                assert.strictEqual(request.content, '{"request":"Request ' + sessionId + '"}');
+
+                // Response
+                var response = session.response;
+                var respHeaders = response.headers;
+                assert.strictEqual(respHeaders['CUSTOM_RESPONSE_HEADER'], sessionId);
+                assert.strictEqual(response.content, '{"result":"Response ' + sessionId + '"}');
+
+                callback();
+            }, function(err){
+                if( err ) {
+                    return assert.fail(err);
+                }
+                done();
+            });
         });
     });
 });
