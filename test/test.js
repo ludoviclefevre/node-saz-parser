@@ -29,7 +29,7 @@ describe('SAZ Parser', function () {
     });
 
     it('must return an error when trying to parse a bad .saz file', function (done) {
-        sazParser('./test/notASazFile.saz', function (err, parsed) {
+        sazParser('./test/notASazFile.saz', function (err) {
             console.log(err);
             assert.ok(err);
             done();
