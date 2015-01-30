@@ -1,0 +1,40 @@
+{
+  "name": "saz-parser",
+  "version": "0.0.1",
+  "description": "NodeJS SAZ File Parser Package",
+  "author": {
+    "name": "Ludovic LEFEVRE",
+    "email": "contact@ludoviclefevre.fr",
+    "url": "http://www.ludoviclefevre.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ludoviclefevre/saz-parser.git"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "saz-parser",
+    "SAZ parser node package"
+  ],
+  "dependencies": {
+    "unzip": "~0.1.11",
+    "lodash": "~3.0.0"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0",
+    "grunt-mocha-cli": "^1.11.0",
+    "jshint-stylish": "^1.0.0",
+    "assert": "^1.3.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
