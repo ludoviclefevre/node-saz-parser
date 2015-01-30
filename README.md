@@ -6,7 +6,7 @@
 ## Install
 
 ```sh
-$ npm install --save saz-parser
+$ npm install saz-parser
 ```
 
 
@@ -15,7 +15,7 @@ $ npm install --save saz-parser
 ```js
 var saz-parser = require('saz-parser');
 
-saz-parser('SAZ File Path', function(err, parsed) {
+saz-parser('SAZ File Path', function(err, sessions) {
 	...
 });
 ```
