@@ -18,7 +18,27 @@ var sazParser = require('saz-parser');
 sazParser('SAZ File Path', function(err, sessions) {
 	...
 });
-```
+
+// parsed object (ie. second argument in callback method) strucure:
+{
+	"sessionId1": {
+		"request": {
+			"headers": {
+				"accept": "application/json",
+				...
+			},
+			"content": "..."
+		},
+		"response": {
+			"headers": {
+				"accept": "application/json",
+				...
+			},
+			"content": "..."
+		}
+	},
+	...
+}
 
 
 ## License
