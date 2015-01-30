@@ -1,7 +1,7 @@
 {
   "name": "saz-parser",
-  "version": "0.0.3",
-  "description": "NodeJS SAZ File Parser Package",
+  "version": "0.0.4-pre",
+  "description": "SAZ File parser",
   "author": {
     "name": "Ludovic LEFEVRE",
     "email": "contact@ludoviclefevre.fr",
@@ -10,6 +10,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ludoviclefevre/node-saz-parser.git"
+  },
+  "bugs": {
+    "url": "http://github.com/ludoviclefevre/node-saz-parser/issues"
   },
   "license": "MIT",
   "files": [
