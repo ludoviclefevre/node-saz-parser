@@ -16,7 +16,9 @@
   },
   "license": "MIT",
   "files": [
-    "index.js"
+    "index.js",
+    "lib",
+    "README.md"
   ],
   "keywords": [
     "saz",
