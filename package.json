@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ludoviclefevre/saz-parser.git"
+    "url": "https://github.com/ludoviclefevre/node-saz-parser.git"
   },
   "license": "MIT",
   "files": [
