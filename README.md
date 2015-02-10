@@ -1,6 +1,6 @@
 #  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
 
-> NodeJS SAZ File Parser Package
+> NodeJS Fiddler SAZ File Parser Package
 
 
 ## Install
