@@ -1,4 +1,10 @@
-#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
+#  
+[![NPM version][npm-image]][npm-url]
+[![Coverage Status](https://coveralls.io/repos/ludoviclefevre/node-saz-parser/badge.svg)](https://coveralls.io/r/ludoviclefevre/node-saz-parser)
+[![Build Status][travis-image]][travis-url]
+[![Dependency Status][daviddm-url]][daviddm-image]
+
+[![NPM](https://nodei.co/npm/saz-parser.png)](https://nodei.co/npm/saz-parser/)
 
 > NodeJS Fiddler SAZ File Parser Package
 
