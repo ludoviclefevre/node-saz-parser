@@ -45,11 +45,13 @@
     "time-grunt": "^1.0.0"
   },
   "scripts": {
-    "test": "grunt",
+    "test": "grunt"
+  },
+  "config": {
     "blanket": {
       "pattern": [
-        "lib",
-        "index.js"
+        "node-saz-parser/lib",
+        "node-saz-parser/index"
       ]
     }
   }
