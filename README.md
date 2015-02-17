@@ -1,6 +1,6 @@
 #  
 [![NPM version][npm-image]][npm-url]
-[![Coverage Status](https://coveralls.io/repos/ludoviclefevre/node-saz-parser/badge.svg)](https://coveralls.io/r/ludoviclefevre/node-saz-parser)
+[![Coverage Status][coveralls-image]][coveralls-url]
 [![Build Status][travis-image]][travis-url]
 [![Dependency Status][daviddm-url]][daviddm-image]
 [![Code Climate](https://codeclimate.com/github/ludoviclefevre/node-saz-parser/badges/gpa.svg)](https://codeclimate.com/github/ludoviclefevre/node-saz-parser)
@@ -56,7 +56,10 @@ MIT © [Ludovic LEFEVRE](http://www.ludoviclefevre.fr)
 
 [npm-url]: https://npmjs.org/package/saz-parser
 [npm-image]: https://badge.fury.io/js/saz-parser.svg
+[coveralls-image]: https://coveralls.io/repos/ludoviclefevre/node-saz-parser/badge.svg
+[coveralls-url]: https://coveralls.io/r/ludoviclefevre/node-saz-parser?branch=master
 [travis-url]: https://travis-ci.org/ludoviclefevre/node-saz-parser
 [travis-image]: https://travis-ci.org/ludoviclefevre/node-saz-parser.svg?branch=master
 [daviddm-url]: https://david-dm.org/ludoviclefevre/node-saz-parser.svg?theme=shields.io
 [daviddm-image]: https://david-dm.org/ludoviclefevre/node-saz-parser
+
