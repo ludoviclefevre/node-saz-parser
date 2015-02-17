@@ -26,7 +26,7 @@ sazParser('SAZ File Path', function(err, sessions) {
 	...
 });
 
-// parsed object (ie. second argument in callback method) strucure:
+// parsed object (ie. second argument in callback method) structure:
 {
 	"sessionId1": {
 		"request": {
