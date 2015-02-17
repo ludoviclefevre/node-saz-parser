@@ -2,6 +2,7 @@
   "name": "saz-parser",
   "version": "0.0.6-pre",
   "description": "SAZ File parser",
+  "main": "index",
   "author": {
     "name": "Ludovic LEFEVRE",
     "email": "contact@ludoviclefevre.fr",
