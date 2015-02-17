@@ -3,6 +3,7 @@
 [![Coverage Status](https://coveralls.io/repos/ludoviclefevre/node-saz-parser/badge.svg)](https://coveralls.io/r/ludoviclefevre/node-saz-parser)
 [![Build Status][travis-image]][travis-url]
 [![Dependency Status][daviddm-url]][daviddm-image]
+[![Code Climate](https://codeclimate.com/github/ludoviclefevre/node-saz-parser/badges/gpa.svg)](https://codeclimate.com/github/ludoviclefevre/node-saz-parser)
 
 [![NPM](https://nodei.co/npm/saz-parser.png)](https://nodei.co/npm/saz-parser/)
 

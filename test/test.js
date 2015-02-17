@@ -1,28 +1,28 @@
 /*global describe, it */
 'use strict';
-var assert = require('assert');
-var sazParser = require('../');
-var async = require('async');
+var assert = require('assert'),
+    sazParser = require('../'),
+    async = require('async');
 
 describe('SAZ Parser', function () {
     it('must parse a one session .saz file', function (done) {
         sazParser('./test/simple.saz', function (err, parsed) {
-            var session = parsed['1'];
+            var session = parsed['1'],
+                request = session.request,
+                reqHeaders = request.headers,
+                response = session.response,
+                respHeaders = response.headers;
 
             // Request
-            var request = session.request;
-            var reqHeaders = request.headers;
-            assert.strictEqual(reqHeaders['Accept'], 'application/json');
-            assert.strictEqual(reqHeaders['Pragma'], 'no-cache');
+            assert.strictEqual(reqHeaders.Accept, 'application/json');
+            assert.strictEqual(reqHeaders.Pragma, 'no-cache');
             assert.strictEqual(request.content, '{"request":"test"}');
 
             // Response
-            var response = session.response;
-            var respHeaders = response.headers;
             assert.strictEqual(respHeaders['Cache-Control'], 'no-cache');
             assert.strictEqual(respHeaders['Transfer-Encoding'], 'chunked');
             assert.strictEqual(respHeaders['Content-Type'], 'application/xml; charset=utf-8');
-            assert.strictEqual(respHeaders['Date'], 'Tue, 10 Jan 2015 10:10:10 GMT');
+            assert.strictEqual(respHeaders.Date, 'Tue, 10 Jan 2015 10:10:10 GMT');
 
             assert.strictEqual(response.content, '{"result":"ok"}');
             done();
@@ -38,24 +38,24 @@ describe('SAZ Parser', function () {
 
     it('must parse a multi-sessions .saz file', function (done) {
         sazParser('./test/multipleSessions.saz', function (err, sessions) {
-            async.each(Object.keys(sessions), function(sessionId, callback) {
-                var session = sessions[sessionId];
+            async.each(Object.keys(sessions), function (sessionId, callback) {
+                var session = sessions[sessionId],
+                    request = session.request,
+                    reqHeaders = request.headers,
+                    response = session.response,
+                    respHeaders = response.headers;
 
                 // Request
-                var request = session.request;
-                var reqHeaders = request.headers;
-                assert.strictEqual(reqHeaders['CUSTOM_REQUEST_HEADER'], sessionId);
+                assert.strictEqual(reqHeaders.CUSTOM_REQUEST_HEADER, sessionId);
                 assert.strictEqual(request.content, '{"request":"Request ' + sessionId + '"}');
 
                 // Response
-                var response = session.response;
-                var respHeaders = response.headers;
-                assert.strictEqual(respHeaders['CUSTOM_RESPONSE_HEADER'], sessionId);
+                assert.strictEqual(respHeaders.CUSTOM_RESPONSE_HEADER, sessionId);
                 assert.strictEqual(response.content, '{"result":"Response ' + sessionId + '"}');
 
                 callback();
-            }, function(err){
-                if( err ) {
+            }, function (err) {
+                if (err) {
                     return assert.fail(err);
                 }
                 done();
