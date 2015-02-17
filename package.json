@@ -48,7 +48,7 @@
     "test": "grunt",
     "blanket": {
       "pattern": [
-        "/lib",
+        "lib",
         "index.js"
       ]
     }
