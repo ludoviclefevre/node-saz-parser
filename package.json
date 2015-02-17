@@ -49,6 +49,7 @@
   },
   "config": {
     "blanket": {
+      "data-cover-never": "node_modules",
       "pattern": [
         "node-saz-parser/lib",
         "node-saz-parser/index"
