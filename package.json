@@ -28,7 +28,7 @@
   ],
   "dependencies": {
     "unzip": "~0.1.11",
-    "lodash": "~3.2.0"
+    "lodash": "~3.3.0"
   },
   "devDependencies": {
     "grunt-cli": "^0.1.13",
