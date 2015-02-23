@@ -1,11 +1,10 @@
 #  
 [![NPM version][npm-image]][npm-url]
-[![Coverage Status][coveralls-image]][coveralls-url]
 [![Build Status][travis-image]][travis-url]
+[![Coverage Status][coveralls-image]][coveralls-url]
 [![Dependency Status][daviddm-url]][daviddm-image]
 [![Code Climate](https://codeclimate.com/github/ludoviclefevre/node-saz-parser/badges/gpa.svg)](https://codeclimate.com/github/ludoviclefevre/node-saz-parser)
 
-[![NPM](https://nodei.co/npm/saz-parser.png)](https://nodei.co/npm/saz-parser/)
 
 > NodeJS Fiddler SAZ File Parser Package
 
