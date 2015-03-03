@@ -14,11 +14,23 @@ describe('SAZ Parser', function () {
                 respHeaders = response.headers;
 
             // Request
+
+            // Url data
+            assert.strictEqual(request.url, 'http://localhost:9000/test');
+            assert.strictEqual(request.type, 'GET');
+            assert.strictEqual(request.protocol, 'HTTP/1.1');
+
             assert.strictEqual(reqHeaders.Accept, 'application/json');
             assert.strictEqual(reqHeaders.Pragma, 'no-cache');
             assert.strictEqual(request.content, '{"request":"test"}');
 
             // Response
+
+            // Url data
+            assert.strictEqual(response.status, 'OK');
+            assert.strictEqual(response.statusCode, '200');
+            assert.strictEqual(response.protocol, 'HTTP/1.1');
+
             assert.strictEqual(respHeaders['Cache-Control'], 'no-cache');
             assert.strictEqual(respHeaders['Transfer-Encoding'], 'chunked');
             assert.strictEqual(respHeaders['Content-Type'], 'application/xml; charset=utf-8');
