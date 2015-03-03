@@ -1,6 +1,6 @@
 {
   "name": "saz-parser",
-  "version": "0.0.7-pre",
+  "version": "0.0.7",
   "description": "SAZ File parser",
   "main": "index",
   "author": {
