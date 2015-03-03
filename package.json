@@ -38,6 +38,7 @@
     "grunt-jscs": "^1.5.0",
     "grunt-mocha-cli": "^1.11.0",
     "grunt-mocha-cov": "^0.3.0",
+    "grunt-escomplex": "^0.0.3",
     "jshint-stylish": "^1.0.0",
     "load-grunt-tasks": "^1.0.0",
     "mocha-term-cov-reporter": "^0.2.0",

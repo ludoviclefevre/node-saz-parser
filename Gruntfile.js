@@ -31,6 +31,23 @@ module.exports = function (grunt) {
                 '<%= jshint.gruntfile.src %>'
             ]
         },
+        escomplex: {
+            options: {
+                complexity: {
+                    logicalor: true,
+                    switchcase: true,
+                    forin: false,
+                    trycatch: false,
+                    newmi: true
+                },
+                format: {
+                    showFunctionDetails: false
+                }
+            },
+            src: [
+                'lib/**/*.js'
+            ]
+        },
         mochacov: {
             unit: {
                 options: {
@@ -72,7 +89,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('test', ['jshint', 'jscs', 'mochacov:unit', 'mochacov:coverage']);
+    grunt.registerTask('test', ['jshint', 'jscs', 'mochacov:unit', 'mochacov:coverage', 'escomplex']);
     grunt.registerTask('travis', ['jshint', 'jscs', 'mochacov:unit', 'mochacov:coverage', 'mochacov:coveralls']);
     grunt.registerTask('default', 'test');
 };
