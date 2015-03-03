@@ -36,6 +36,13 @@ describe('SAZ Parser', function () {
         });
     });
 
+    it('must return an error when trying to parse an inexistent file', function (done) {
+        sazParser('./test/doesNotExistFile.saz', function (err) {
+            assert.ok(err);
+            done();
+        });
+    });
+
     it('must parse a multi-sessions .saz file', function (done) {
         sazParser('./test/multipleSessions.saz', function (err, sessions) {
             _.forEach(sessions, function (session, sessionId) {
