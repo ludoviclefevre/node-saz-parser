@@ -17,7 +17,7 @@ describe('SAZ Parser', function () {
 
             // Url data
             assert.strictEqual(request.url, 'http://localhost:9000/test');
-            assert.strictEqual(request.type, 'GET');
+            assert.strictEqual(request.method, 'GET');
             assert.strictEqual(request.protocol, 'HTTP/1.1');
 
             assert.strictEqual(reqHeaders.Accept, 'application/json');
