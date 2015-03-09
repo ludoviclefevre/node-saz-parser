@@ -28,6 +28,9 @@ sazParser('SAZ File Path', function(err, sessions) {
 // parsed object (ie. second argument in callback method) structure:
 {
 	"sessionId1": {
+		"url": "http://..../",
+		"method": "GET",
+		"protocol": "HTTP/1.1",
 		"request": {
 			"headers": {
 				"accept": "application/json",
