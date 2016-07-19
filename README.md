@@ -24,8 +24,10 @@ var sazParser = require('saz-parser');
 sazParser('SAZ File Path', function(err, sessions) {
 	...
 });
+```
 
-// sessions callback parameter
+```js
+// sessions callback parameter sample
 {
 	"sessionId1": {
 		"url": "http://..../",
